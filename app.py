@@ -18,8 +18,8 @@ from tensorflow import keras
 app = Flask(__name__)
 
 
-model = keras.models.load_model(r'C:\Users\Jojo\Downloads\flask-advanced-chatbot\flask-chatterbot-master\m1.h5')
-data_file = open(r'C:\Users\Jojo\Downloads\flask-advanced-chatbot\flask-chatterbot-master\datanew.json').read()
+model = keras.models.load_model(r'm1.h5')
+data_file = open(r'datanew.json').read()
 intents = json.loads(data_file)
 classes = ['artificial intelligence', 'emotion', 'food', 'goodbye', 'greeting', 'health', 'humor', 'money', 'options', 'surity', 'thanks']
 words = ["'s", ',', 'a', 'ai', 'anyone', 'are', 'arrogant', 'artificial', 'awesome', 'be', 'boyfriend', 'bragging', 'bye', 'can', 'chatting', 'cool', 'could', 'data', 'do', 'drink', 'earn', 'eat', 'electricity', 'feeling', 'food', 'for', 'get', 'girlfriend', 'goodbye', 'happy', 'have', 'health', 'healthy', 'hello', 'help', 'helpful', 'helping', 'hey', 'hi', 'hola', 'how', 'if', 'intelligence', 'is', 'jealous', 'joke', 'later', 'like', 'me', 'ml', 'much', 'never', 'next', 'nice', 'offered', 'paid', 'provide', 'sad', 'see', 'sound', 'support', 'sure', 'tell', 'thank', 'thanks', 'that', 'there', 'till', 'time', 'to', 'what', 'would', 'yes', 'you', 'your']
