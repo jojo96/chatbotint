@@ -1,0 +1,12 @@
+# Used by pip to install required python packages
+# Usage: pip install -r requirements.txt
+
+Flask==1.1.2
+SQLAlchemy>=1.2
+nltk==3.5
+keras==2.4.3
+json==2.0.9
+numpy==1.19.1
+keras==2.4.3
+tensorflow==2.3.0
+gunicorn==19.9.0
